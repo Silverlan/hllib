@@ -1,4 +1,4 @@
-This repository is an unmodified copy of the source code found at http://nemesis.thewavelength.net/index.php?p=35 for version 2.4.6 of the HLLib library.
+This repository iscopy of the source code found at http://nemesis.thewavelength.net/index.php?p=35 for version 2.4.6 of the HLLib library. Some compile errors with the GCC were fixed, the code is otherwise unmodified.
 
 ================================
 ================================
