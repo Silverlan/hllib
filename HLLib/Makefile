@@ -1,4 +1,4 @@
-CXX		=	g++
+#CXX		=	g++ #hard dependency!
 HLLIB_VERS	=	2.3.0
 LDFLAGS		=	-shared -Wl,-soname,libhl.so.2
 CXXFLAGS	=	-O2 -g -fpic -funroll-loops -fvisibility=hidden
@@ -29,3 +29,6 @@ install: libhl.so.$(HLLIB_VERS)
 
 libhl.so.$(HLLIB_VERS): $(objs)
 	$(CXX) $(LDFLAGS) -o $@ $(objs)
+
+	ln -fs libhl.so.$(HLLIB_VERS) libhl.so.2
+	ln -fs libhl.so.$(HLLIB_VERS) libhl.so
