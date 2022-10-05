@@ -18,7 +18,7 @@ objs		=	$(sources:.cpp=.o)
 all: libhl.so.$(HLLIB_VERS)
 
 clean:
-	rm -f \#* *~ *.o *.so.*
+	rm -f \#* *~ *.o *.so.* *.so
 
 install: libhl.so.$(HLLIB_VERS)
 	install -g root -m 0755 -o root -d $(PREFIX)/lib $(PREFIX)/include
