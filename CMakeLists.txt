@@ -15,6 +15,7 @@ function(add_include_dir IDENTIFIER)
 	set(INCLUDE_DIRS ${INCLUDE_DIRS} DEPENDENCY_${UIDENTIFIER}_INCLUDE PARENT_SCOPE)
 endfunction(add_include_dir)
 
+set(LIBRARIES)
 function(link_external_library IDENTIFIER)
 	set(PRETTYNAME ${IDENTIFIER})
 	set(ARGV ${ARGN})
