@@ -71,7 +71,7 @@ endforeach(LIB)
 target_include_directories(${PROJ_NAME} PRIVATE ${CMAKE_CURRENT_LIST_DIR}/HLLib)
 
 if(UNIX)
-	target_compile_options(${PROJ_NAME} PRIVATE -O2 -g -fpic -frunroll-loops -fvisibility=hidden)
+	target_compile_options(${PROJ_NAME} PRIVATE -O2 -g -fpic -funroll-loops -fvisibility=hidden)
 	target_link_options(${PROJ_NAME} PRIVATE -shared -Wl,-soname,libhl.so.2)
 endif()
 
